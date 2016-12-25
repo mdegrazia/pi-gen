@@ -33,7 +33,7 @@ install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/applications"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/desktop-directories"
 
-#piWarmer file
+#piWarmer files
 install -m 777 files/piWarmer.config	${ROOTFS_DIR}/home/pi/Desktop/
-
+install -m 644 files/airplane.jpg	${ROOTFS_DIR}/usr/share/pixel-wallpaper/
 
