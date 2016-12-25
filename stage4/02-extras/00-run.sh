@@ -18,6 +18,7 @@ tar xvf files/python_games.tar.gz -C ${ROOTFS_DIR}/home/pi/python_games --strip-
 chown 1000:1000 ${ROOTFS_DIR}/home/pi/python_games -Rv
 chmod +x ${ROOTFS_DIR}/home/pi/python_games/launcher.sh
 
+install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/Desktop"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/Documents"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/Documents/BlueJ Projects"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/Documents/Greenfoot Projects"
@@ -31,3 +32,8 @@ install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/applications"
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/desktop-directories"
+
+#piWarmer file
+install -m 777 files/piWarmer.config	${ROOTFS_DIR}/home/pi/Desktop/
+
+
