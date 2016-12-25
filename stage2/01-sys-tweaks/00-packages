@@ -14,3 +14,6 @@ raspberrypi-sys-mods
 pi-bluetooth
 apt-listchanges
 usb-modeswitch
+screen
+ppp
+elinks
