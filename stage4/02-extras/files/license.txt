@@ -8,7 +8,7 @@ Name of Client: Enduser
 
 
 Images (1):
-Airplane.jpg (2.0M)
+airplane.jpg (2.0M)
 
 Date created: 2016
 
