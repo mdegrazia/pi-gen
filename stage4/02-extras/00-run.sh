@@ -42,6 +42,7 @@ install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/home/pi/.local/share/desktop-direct
 install -v -o 1000 -g 1000 -d "${ROOTFS_DIR}/usr/local/bin/lib"
 install -m 755 files/fona.py 	${ROOTFS_DIR}/usr/local/bin/lib/
 install -m 755 files/relay.py	${ROOTFS_DIR}/usr/local/bin/lib/
+touch ${ROOTFS_DIR}/usr/local/bin/lib/__init__.py
 install -m 777 files/piWarmer.config	${ROOTFS_DIR}/home/pi/Desktop/
 install -m 644 files/airplane.jpg	${ROOTFS_DIR}/usr/share/pixel-wallpaper/
 install -m 644 files/airplane_license.txt	${ROOTFS_DIR}/usr/share/pixel-wallpaper/
